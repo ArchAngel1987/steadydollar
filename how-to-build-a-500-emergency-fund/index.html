@@ -9,23 +9,27 @@
 <meta property="og:title" content="How to Build a $500 Emergency Fund on a Tight Budget | SteadyDollar">
 <meta property="og:description" content="A realistic plan to save your first $500, even when you live paycheck to paycheck. Small steps, fast wins and where to find the money.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="https://archangel1987.github.io/steadydollar/img/bundle.jpg">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23134e3a'/><text x='16' y='23' font-size='20' text-anchor='middle' fill='%23ffd447' font-family='Arial' font-weight='bold'>$</text></svg>">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Figtree:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<meta property="og:image" content="https://archangel1987.github.io/steadydollar/video/poster.jpg">
+<meta name="theme-color" content="#0b1d17">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%2322c55e'/><text x='16' y='23' font-size='20' text-anchor='middle' fill='%230b1d17' font-family='Arial' font-weight='bold'>$</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Figtree:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../style.css">
 </head>
 <body class="article">
 <header class="top"><div class="wrap">
 <a class="logo" href="../"><span class="mark">$</span>SteadyDollar</a>
-<nav><a href="../#guides">Guides</a><a href="../#templates">Templates</a><a href="../about/">About</a></nav>
+<nav><a href="../#guides">Free guides</a><a href="../#templates">Templates</a><a href="#newsletter">Newsletter</a></nav>
+<a class="btn btn-sm" href="../#templates">Shop templates</a>
 </div></header>
 <main>
-<article class="post wrap">
-<header class="post-head">
-<p class="meta"><span class="tag t-savings">Saving</span> 2 min read &nbsp; Oct 24, 2026</p>
+<div class="progress"></div>
+<header class="post-hero"><div class="wrap narrow">
+<a class="back" href="../#guides">&larr; All free guides</a>
+<p class="meta"><span class="tag t-savings">🐷 Saving</span><span>2 min read</span><span>Oct 24, 2026</span></p>
 <h1>How to Build a $500 Emergency Fund on a Tight Budget</h1>
 <p class="lede">A realistic plan to save your first $500, even when you live paycheck to paycheck. Small steps, fast wins and where to find the money.</p>
-</header>
+</div></header>
+<article class="wrap narrow">
 <div class="prose">
 <p>A $500 emergency fund won’t cover everything. But it covers the
 things that usually start a debt spiral: a car repair, an urgent care
@@ -82,29 +86,41 @@ Tracker</a> has progress bars for your emergency fund and other goals,
 and calculates exactly how much to save each month.</p>
 
 </div>
-<aside class="product">
-<img src="../img/savings.jpg" alt="Sinking Funds & Savings Tracker preview" width="800" height="600" loading="lazy">
+<aside class="product" data-reveal>
+<img src="../img/savings.jpg" alt="Sinking Funds Tracker preview" width="800" height="600" loading="lazy">
 <div>
-<h3>Sinking Funds & Savings Tracker</h3>
-<p>Know exactly how much to save each month for up to 12 goals. Works in Excel and Google Sheets.</p>
+<p class="pill">Spreadsheet template</p>
+<h3>Sinking Funds Tracker</h3>
+<p>Know exactly how much to save each month for up to 12 goals. Works in Excel and Google Sheets. Instant download.</p>
 <a class="btn" href="https://payhip.com/b/7KW1b">Get it for $7</a>
 </div>
 </aside>
-<section class="signup">
-<h2>One money tip a week. Free.</h2>
-<p>Short, practical emails for people who budget paycheck to paycheck. Unsubscribe anytime.</p>
+<section class="signup" id="newsletter" data-reveal>
+<div><h2>Get one money tip every Tuesday.</h2><p>Short, practical and free. Written for people who budget paycheck to paycheck.</p></div>
 <form action="https://app.kit.com/forms/10091417/subscriptions" method="post">
 <label class="sr" for="em">Email address</label>
-<input id="em" type="email" name="email_address" placeholder="you@email.com" required>
-<button class="btn" type="submit">Subscribe</button>
+<input id="em" type="email" name="email_address" placeholder="Your email address" required>
+<button class="btn btn-dark" type="submit">Subscribe free</button>
 </form>
 </section>
 </article>
 </main>
 <footer><div class="wrap">
-<a class="logo" href="../"><span class="mark">$</span>SteadyDollar</a>
-<p>Simple money guides for people living paycheck to paycheck. Educational content only, not financial advice.</p>
-<p><a href="../privacy/">Privacy &amp; disclaimer</a> &nbsp; <a href="https://payhip.com/SteadyDollar">Shop</a> &nbsp; &copy; 2026</p>
-</div></footer>
+<div><a class="logo" href="../"><span class="mark">$</span>SteadyDollar</a>
+<p>Simple money guides for people living paycheck to paycheck.<br>Educational content only, not financial advice.</p></div>
+<div class="flinks"><a href="../#guides">Free guides</a><a href="../#templates">Templates</a><a href="../about/">About</a><a href="../privacy/">Privacy &amp; disclaimer</a></div>
+</div><p class="wrap copy">&copy; 2026 SteadyDollar</p></footer>
+<script>
+(function(){
+  var top=document.querySelector('.top');
+  addEventListener('scroll',function(){top.classList.toggle('scrolled',scrollY>10)},{passive:true});
+  var bar=document.querySelector('.progress');
+  if(bar){addEventListener('scroll',function(){var h=document.documentElement;bar.style.transform='scaleX('+(h.scrollTop/(h.scrollHeight-h.clientHeight))+')'},{passive:true});}
+  var els=document.querySelectorAll('[data-reveal]');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{rootMargin:'0px 0px -8% 0px'});
+  els.forEach(function(e){io.observe(e)});
+})();
+</script>
 </body>
 </html>
